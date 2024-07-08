@@ -65,7 +65,36 @@ const CheckoutDetails = ({ setModal }) => {
 
   const handleSubmit = () => {
     if (isFormValid) {
-      setSuccessMsg(true);
+
+      var options = {
+        key: "rzp_test_BIcczLlY65DPGs",
+        key_secret: "4VFBWJIHLxS9VTkZtKTXZv0t",
+        amount: cartTotal * 100,
+        currency: "USD",
+        name: "pizzland",
+        description: "testing",
+        handler: function (response) {
+
+          if (response.razorpay_payment_id) {
+            setSuccessMsg(true);
+          }
+
+        },
+        prefill: {
+          name: "Pizzaland",
+          email: "xxxxxxxxxxxxx@gmail.com",
+          contact: "9000000000"
+        },
+        notes: {
+          address: "Razorpay"
+        },
+        theme: {
+          color: "#d1411e"
+        }
+      };
+      var pay = new window.Razorpay(options)
+      pay.open()
+
     }
   };
 
@@ -135,16 +164,7 @@ const CheckoutDetails = ({ setModal }) => {
                 </div>
               </div>
               <button
-                // onClick={() => setSuccessMsg(true)}
-                // className="btn btn-lg gradient w-full"
-                // disabled={
-                //   !formValues.firstName ||
-                //   !formValues.phone ||
-                //   !formValues.email ||
-                //   !formValues.streetName ||
-                //   !formValues.block ||
-                //   !formValues.aptNo
-                // }
+
                 onClick={handleSubmit}
                 className={`btn btn-lg w-full gradient ${!isFormValid && 'opacity-50 cursor-not-allowed '}`}
                 disabled={!isFormValid}

@@ -5,6 +5,7 @@ import CartMobile from "./components/CartMobile"
 import CartProvider from './context/CartContext'
 import CartDesktop from './components/CartDesktop'
 import Footer from "./components/Footer"
+import Script from 'next/script'
 import { Bangers, Quicksand, Roboto_Condensed } from 'next/font/google';
 
 const quicksand = Quicksand({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </body>
       </html>
+      <Script src="https://checkout.razorpay.com/v1/checkout.js" />
     </CartProvider>
 
   );
