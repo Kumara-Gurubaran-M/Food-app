@@ -4,7 +4,7 @@ Welcome to **Pizzaland** - a responsive web application for ordering delicious p
 
 ## Project Status
 
-**Current Status:** Working stage (Frontend part completed)
+**Current Status:** Working stage (Frontend part completed) with payment Intergration
 
 ## Overview
 
@@ -21,6 +21,8 @@ Check out the live version of the application here: [Pizzaland on Vercel](https:
 - **Order Placement:** Add pizzas to the cart and place your order seamlessly.
 - **Cart Management:** View and manage items in your cart before checkout.
 - **Checkout Process:** Fill out shipping details and place your order.
+- - **Payment Integration:** Integrate with payment gateways for secure transactions.
+
 
 ## Technologies Used
 
@@ -83,7 +85,6 @@ pizzaland/
 - **Backend Integration:** Connect to a backend API for order management and user authentication.
 - **User Authentication:** Implement user registration and login features.
 - **Order Tracking:** Allow users to track their orders in real-time.
-- **Payment Integration:** Integrate with payment gateways for secure transactions.
 
 ## Contributing
 
