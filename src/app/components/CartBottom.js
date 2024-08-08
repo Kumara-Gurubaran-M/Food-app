@@ -42,7 +42,7 @@ const CartBottom = () => {
           className='bg-white w-full h-full lg:max-w-[900px] lg:max-h-[600px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none'
         >
           <div className="absolute z-30 right-2 top-2 hover:scale-110 duration-200 cursor-pointer">
-            <IoCloseOutline onClick={handleModal} className="text-4xl text-orange" />
+            <IoCloseOutline onClick={handleModal} className="text-4xl text-red-700" />
           </div>
           <CheckoutDetails setModal={setModal} />
 

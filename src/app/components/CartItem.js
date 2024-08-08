@@ -27,7 +27,7 @@ const CartItem = ({ pizza }) => {
           </div>
         </div>
         <div className="flex flex-col justify-between">
-          <div onClick={() => removeItem(pizza.id, pizza.price, pizza.crust)} className="text-2xl felx justify-center items-center self-end cursor-pointer hover:scale-110 duration-100 transition-all text-orange">
+          <div onClick={() => removeItem(pizza.id, pizza.price, pizza.crust)} className="text-2xl flex justify-center items-center self-end cursor-pointer hover:scale-110 duration-100 transition-all text-red-700">
             <IoCloseOutline />
           </div>
           <div>

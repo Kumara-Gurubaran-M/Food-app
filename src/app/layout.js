@@ -25,17 +25,24 @@ const robotocondensed = Roboto_Condensed({
   weight: ['300', '400', '700'],
 });
 
+
+
 export default function RootLayout({ children }) {
+
   return (
     <CartProvider>
       <html lang='en'>
-        <body className={`${quicksand.variable} ${robotocondensed.variable} ${bangers.variable} font-quicksand`}>
+
+        <body className={`${quicksand.variable} ${robotocondensed.variable} ${bangers.variable} font-quicksand  `}>
+
           <Nav />
           <CartMobileIcon />
           <CartMobile />
           {children}
           <CartDesktop />
           <Footer />
+
+
         </body>
       </html>
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />

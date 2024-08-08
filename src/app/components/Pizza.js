@@ -25,7 +25,7 @@ const Pizza = ({ pizza }) => {
   }
 
   return (
-    <div className="group py-2 px-4 xl:py-4 xl:px-2 rounded-xl">
+    <div className="group py-2 px-4 xl:py-4 xl:px-2 rounded-xl ">
       <Image onClick={openModel} className="lg:group-hover:translate-y-3 transition-all duration-300 mb-8" width={270} height={270} src={pizza.image} alt={pizza.name} priority={1} />
       <div>
         <div onClick={openModel} className="text-xl font-bangers mb-3 capitalize cursor-pointer">

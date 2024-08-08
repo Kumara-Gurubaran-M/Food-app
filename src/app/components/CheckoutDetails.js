@@ -69,7 +69,7 @@ const CheckoutDetails = ({ setModal }) => {
       var options = {
         key: "rzp_test_BIcczLlY65DPGs",
         key_secret: "4VFBWJIHLxS9VTkZtKTXZv0t",
-        amount: cartTotal * 100,
+        amount: Math.round(cartTotal * 100),
         currency: "USD",
         name: "pizzland",
         description: "testing",
@@ -89,7 +89,7 @@ const CheckoutDetails = ({ setModal }) => {
           address: "Razorpay"
         },
         theme: {
-          color: "#d1411e"
+          color: "#405D72"
         }
       };
       var pay = new window.Razorpay(options)
@@ -144,17 +144,17 @@ const CheckoutDetails = ({ setModal }) => {
                 <h3 className="text-base font-extrabold uppercase mb-4 border-b pb-4">Your Order</h3>
                 <div className="overflow-y-scroll overflow-hidden scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-white-500 font-semibold flex flex-col gap-y-4 h-[240px] py-2">
                   <div className="flex justify-between gap-x-2 uppercase font-bold ">
-                    <div className="text-gray-400">Items</div>
-                    <div className="text-gray-400">Amount</div>
+                    <div className="text-primary">Items</div>
+                    <div className="text-primary">Amount</div>
                   </div>
                   {cart.map((pizza, index) => (
                     <div className="flex justify-between text-[15px]" key={index}>
 
                       <div className="flex gap-x-2">
-                        <div className="capitalize">{pizza.name}</div>
-                        <div>{pizza.amount > 1 && `X ${pizza.amount}`}</div>
+                        <div className="capitalize font-semibold">{pizza.name}</div>
+                        <div className="font-semibold">{pizza.amount > 1 && `X ${pizza.amount}`}</div>
                       </div>
-                      <div>$ {parseFloat(pizza.price * pizza.amount).toFixed(2)}</div>
+                      <div className="font-semibold">$ {parseFloat(pizza.price * pizza.amount).toFixed(2)}</div>
                     </div>
                   ))}
                 </div>

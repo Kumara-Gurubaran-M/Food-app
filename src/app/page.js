@@ -1,4 +1,4 @@
-// import components
+
 import Pizza from './components/Pizza';
 import Banner from './components/Banner';
 
@@ -8,7 +8,7 @@ const pizzas = [
     id: 1,
     name: 'capricciosa',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/capricciosa.webp',
     priceSm: 9.99,
     priceMd: 10.99,
@@ -45,7 +45,7 @@ const pizzas = [
     id: 2,
     name: 'cheesy',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/cheesy.webp',
     priceSm: 10.99,
     priceMd: 11.99,
@@ -82,7 +82,7 @@ const pizzas = [
     id: 3,
     name: 'hawaii',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/hawaii.webp',
     priceSm: 10.99,
     priceMd: 11.99,
@@ -119,7 +119,7 @@ const pizzas = [
     id: 4,
     name: 'italian',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/italian.webp',
     priceSm: 11.99,
     priceMd: 12.99,
@@ -156,7 +156,7 @@ const pizzas = [
     id: 5,
     name: 'margherita',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/margherita.webp',
     priceSm: 9.99,
     priceMd: 10.99,
@@ -193,7 +193,7 @@ const pizzas = [
     id: 6,
     name: 'pepperoni',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/pepperoni.webp',
     priceSm: 10.99,
     priceMd: 11.99,
@@ -230,7 +230,7 @@ const pizzas = [
     id: 7,
     name: 'quattro formaggi',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/quattro-formaggi.webp',
     priceSm: 12.99,
     priceMd: 13.99,
@@ -267,7 +267,7 @@ const pizzas = [
     id: 8,
     name: 'quattro stagioni',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/quattro-stagioni.webp',
     priceSm: 11.99,
     priceMd: 12.99,
@@ -304,7 +304,7 @@ const pizzas = [
     id: 9,
     name: 'tonno',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/tonno.webp',
     priceSm: 10.99,
     priceMd: 11.99,
@@ -341,7 +341,7 @@ const pizzas = [
     id: 10,
     name: 'vegetarian',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+      'Indulge in the perfect blend of flavors with our handcrafted pizzas, featuring a crispy crust, rich tomato sauce, and a mouthwatering mix of fresh toppings.',
     image: '/vegetarian.webp',
     priceSm: 9.99,
     priceMd: 10.99,
@@ -380,7 +380,7 @@ export default function Home() {
   return (
     <section >
       <Banner />
-      <div className='container mx-auto'>
+      <div className='container mx-auto '>
         <div className='grid grid-cols-2 gap-[15px] md:grid-cols-3 xl:grid-cols-4 xl:gap=[30px] py-12'>
           {pizzas.map((pizza, index) => {
             return <Pizza pizza={pizza} key={index} />
